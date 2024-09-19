@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo App Frontend
 
-## Getting Started
+This is the frontend for a Todo List application built with Next.js and React DnD.
 
-First, run the development server:
+## Setup
 
-```bash
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a `.env` file in the root directory with the following content:
+   ```
+   NEXT_PUBLIC_API_URL=your_backend_api_url
+   ```
+4. Replace `your_backend_api_url` with the URL of your deployed backend.
+
+## Running the Application
+
+To start the development server:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Add new tasks
+- Drag and drop tasks between To Do, In Progress, and Done columns
+- Delete tasks from the Done column
+- Responsive design
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This frontend is deployed on Vercel. To deploy your own instance:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Push your code to a GitHub repository
+2. Create a new project on Vercel
+3. Connect your GitHub repository
+4. Set the environment variables in the Vercel dashboard
+5. Deploy the project
