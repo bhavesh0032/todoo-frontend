@@ -39,6 +39,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, moveTask, deleteTask, status 
 
   return (
     <div
+    // @ts-ignore
       ref={drag}
       className={`p-2 mb-2 rounded shadow-md ${getBackgroundColor()} ${
         isDragging ? 'opacity-50' : ''

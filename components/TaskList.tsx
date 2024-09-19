@@ -27,6 +27,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, status, moveTask, deleteTask
 
   return (
     <div
+    // @ts-ignore
       ref={drop}
       className={`bg-white p-4 rounded-lg shadow-lg min-h-[300px] ${isOver ? 'border-2 border-dashed border-gray-400' : ''}`}
     >
